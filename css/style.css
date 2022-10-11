@@ -263,6 +263,7 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .link {}
@@ -332,10 +333,111 @@ footer {
     text-transform: uppercase;
     color: #FBB731;
 }
-
+.w768{
+    display: none;
+}
+.burger-menu{
+    display: none;
+}
+.w320{
+    display: none;
+}
 @media (max-width:768px) {
-    .top-link {
-        color: red;
+    .container{
+        margin: 0 15px;
     }
-    
+    .top-item{
+        margin-right: 22px;
+    }
+    .header-bottom{
+        background-position: bottom;
+    }
+    .banner{
+        margin-top: 72px;
+        margin-bottom: 80px;
+    }
+    .banner-bg{
+        padding-left: 40px;
+        background-position-x: -72px;
+    }
+    .burger-item>img{
+        width: 360px;
+    }
+    .tel{
+        display: none;
+    }
+    .w768{
+        display: flex;
+        margin-top: 13px;
+    }
+}
+@media (max-width:320px) {
+    .burger-menu{
+        display: block;
+    }
+    .top-menu{
+        display: none;
+    }
+    .top-logo>img{
+        width: 116px;
+    }
+    .burger-item>img{
+        width: 139px;
+    }
+    .burger-name{
+        font-size: 13px;
+    }
+    .burger-price{
+        font-size: 13px;
+    }
+    .burger-title{
+        font-size: 27px;
+    }
+    .header-bottom{
+        padding: 58px 0;
+    }
+    .bottom-text1{
+        font-size: 13px;
+    }
+    .bottom-text2{
+        font-size: 12px;
+    }
+    .bottom-title{
+        font-size: 38px;
+    }
+    .header-bottom{
+        background: url("../img/w320.png");
+    }
+    .banner{
+        margin-top: 33px;
+        margin-bottom: 51px;
+    }
+    .banner-bg{
+        padding: 35px 28px 35px 15px;
+        background-position-x: -110px;
+    }
+    .additionally{
+        margin-top: 0px;
+        margin-bottom: 11px;
+    }
+    .w768{
+        display: none;
+    }
+    .w320{
+        display: flex;
+        margin-left: 50px;
+    }
+    .logo-tel{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .footer-title{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    footer{
+        padding-top: 53px;
+        padding-bottom: 61px;
+    }
 }
